@@ -15,7 +15,7 @@ class Funcionario
         $this->descontos = $this->calcularDescontos();
     }
 
-    function calcularDescontos()
+    function calcularDescontos() 
     {
         return number_format($this->salario * 0.275 + $this->salario, 2, ',', '.');
     }
