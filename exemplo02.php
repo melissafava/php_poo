@@ -7,11 +7,11 @@ function calcularDescontos($salario, $previdencia) {
 $joaoNome = 'João Filho';
 $joaoDescontos = calcularDescontos(1000, 100);
 
-$mariaNome = "Maria Rute"
+$mariaNome = 'Maria Rute';
 $mariaDescontos = calcularDescontos(2000, 200);
 
 $joseNome = 'José Salgado';
-$joseDescontos =calcularDescontos(3000, 300);
+$joseDescontos = calcularDescontos(3000, 300);
 
 echo "O valor do desconto de $joaoNome é $joaoDescontos. <br>";
 echo "O valor do desconto de $mariaNome é $mariaDescontos. <br>";
