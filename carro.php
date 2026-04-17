@@ -21,7 +21,7 @@ class Carro {
 
     public function SetVelocidade($novaVelocidade)
     {
-        if(novaVelocidade >= 0 && novaVelocidade < 201){
+        if($novaVelocidade >= 0 && $novaVelocidade < 201){
         $this->velocidade = $novaVelocidade;
     }else{
         echo "ERRO";
