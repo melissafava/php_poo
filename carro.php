@@ -9,31 +9,33 @@ class Carro {
         $this->velocidade = $velocidade;
     }
 
-    get velocidade
      public function getVelocidade()
     {
         return $this->velocidade;
     }
 
-    get modelo
      public function getModelo()
     {
         return $this->modelo;
     }
 
-    public function $novaVelocidade()
+    public function SetVelocidade($novaVelocidade)
     {
-        if(novaVelocidade > 0 && novaVelocidade < 201)
+        if(novaVelocidade >= 0 && novaVelocidade < 201){
+        $this->velocidade = $novaVelocidade;
+    }else{
+        echo "ERRO";
     }
+}
 }
 
 // --- TESTE DO VEÍCULO ---
 $meuCarro = new Carro("Senai-Mobile", 0);
 
 // O desastre: alteração direta sem validação
-$meuCarro->velocidade = 200;
-$meuCarro->velocidade = 0;
+$meuCarro->SetVelocidade(200);
 
-echo "Modelo: " . $meuCarro->modelo . "<br>";
-echo "Velocidade atual: " . $meuCarro->velocidade . " km/h";
+
+echo "Modelo: " . $meuCarro->getModelo() . "<br>";
+echo "Velocidade atual: " . $meuCarro->getVelocidade() . " km/h";
 ?>
